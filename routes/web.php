@@ -39,8 +39,8 @@ Route::group(['namespace' => 'App\Http\Controllers'], function () {
             Route::get('/', [Dashboard::class, 'index'])->name('dashboard.index');
         });
 
-        Route::group(['prefix' => 'barang-masuk'], function () {
-            Route::get('/', [TransaksiBarangMasukController::class, 'index'])->name('barang-masuk.index');
+        Route::group(['prefix' => 'pembelian'], function () {
+            Route::get('/', [TransaksiBarangMasukController::class, 'index'])->name('pembelian.index');
             Route::get('/edit', [TransaksiBarangMasukController::class, 'edit']);
             Route::put('/{id}', [TransaksiBarangMasukController::class, 'update']);
             Route::delete('/hapus', [TransaksiBarangMasukController::class, 'hapus']);

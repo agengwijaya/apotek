@@ -19,6 +19,7 @@ class CreateTransaksiPembeliansTable extends Migration
             $table->date('TglNota')->nullable();
             $table->string('KdSuplier')->nullable();
             $table->double('Diskon')->nullable();
+            $table->integer('status')->nullable();
             $table->timestamp('created_at')->useCurrent();
             $table->timestamp('updated_at')->nullable();
         });

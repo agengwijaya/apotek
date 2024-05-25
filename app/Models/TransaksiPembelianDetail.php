@@ -9,24 +9,19 @@ class TransaksiPembelianDetail extends Model
 {
     use HasFactory;
 
-    protected $table = 'transaksi_masuk_detail';
+    protected $table = 'pembelian_detail';
 
     protected $guarded = ['id'];
 
-    protected $with = ['barang', 't_satuan_barang'];
+    protected $with = ['barang'];
 
     public function barang()
     {
-        return $this->belongsTo(Barang::class);
-    }
-
-    public function t_satuan_barang()
-    {
-        return $this->belongsTo(SatuanBarang::class, 'satuan_barang_id', 'id');
+        return $this->belongsTo(Barang::class, 'KdObat', 'KdObat');
     }
 
     public function transaksi_pembelian()
     {
-        return $this->belongsTo(TransaksiPembelian::class, 'transaksi_masuk_id');
+        return $this->belongsTo(TransaksiPembelian::class, 'Nota');
     }
 }

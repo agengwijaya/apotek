@@ -179,14 +179,14 @@
           <div class="brand-wrap" style="right: 10px">
 
             <div class="brand-title">
-              <span class="text-dark">INVENTORY APP</span>
+              <span class="text-dark">APOTEK</span>
             </div>
           </div>
         </div>
         <div class="header__content">
           <div class="header__content-start">
             <div class="bg-white p-2 rounded d-md-none d-lg-none d-xl-none">
-              <span class="text-dark">INVENTORY APP</span>
+              <span class="text-dark">APOTEK</span>
             </div>
             <button type="button" class="nav-toggler header__btn btn btn-icon btn-sm" aria-label="Nav Toggler">
               <i class="demo-psi-view-list"></i>
